@@ -1,0 +1,104 @@
+/* ===============
+    global styles
+   ==============*/
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: white;
+}
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+/* ===============
+       navbar
+   ==============*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #031E5F;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+}
+
+.nav-img{
+    margin-left: 2em;
+    max-width: 5em;
+    height: auto;
+}
+
+.nav-title:hover{
+    color: gold;
+}
+
+.nav-links{
+    margin-right: 2em;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+    list-style: none;
+}
+.nav-links a{position: relative;}   /* for hover effect to work */
+.nav-links a::after{
+    content: "";
+    background-color: gold;
+    position: absolute;
+    bottom: -4px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    transition: width 0.2s linear;
+}
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+/* column navbar */
+@media only screen and (max-width: 720px) {
+    .nav-img{
+        margin: 1em 0 0 0;
+    }
+    .nav-links{
+        margin: 0.5em 0 1.5em 0;
+    }
+    .nav-links{
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+/* ===============
+    paralax - jumb
+   ==============*/
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-jumb{
+    background-image: url("../images/par-img.jpg");
+}
+.main-jumb > img{
+    visibility: hidden;
+}
+
+.engine{
+    width: 100vw;
+    height: 1000px;
+    background-color: white;
+}
