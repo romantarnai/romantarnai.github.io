@@ -172,8 +172,27 @@ main{
 .image-description{
     margin-left: 0.5em;
     margin-right: 0.5em;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
+}
+
+.text-box--button{
+    border: 1px solid white;
+    background: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 1em;
+}
+.button-text{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+.text-box--button:hover{
+    background: white;
+}
+.text-box--button:hover .button-text{
+    color: black;
 }
 
 /* ===============
@@ -207,7 +226,7 @@ footer{
    ==============*/
 
 /* tablet */
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 980px) {
     /* column navbar */
     .nav-img{
         margin: 1em 0 0 0;
@@ -244,10 +263,12 @@ footer{
     }
     .image-description{
         font-size: 0.8rem;
-        margin-bottom: 3em;
     }
     .social{
         gap: 3em;
+    }
+    .text-box--button{
+        margin-bottom: 3em;
     }
 }
 /* mobile */
