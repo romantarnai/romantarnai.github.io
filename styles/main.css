@@ -92,9 +92,7 @@ body{
 }
 .main-jumb{
     background-image: url("../images/par-img.jpg");
-}
-.main-jumb > img{
-    visibility: hidden;
+    height: 100vh;
 }
 
 .engine{
