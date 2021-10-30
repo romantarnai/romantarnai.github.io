@@ -227,6 +227,10 @@ footer{
 
 /* tablet */
 @media only screen and (max-width: 980px) {
+    main{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
     /* column navbar */
     .nav-img{
         margin: 1em 0 0 0;
@@ -274,6 +278,8 @@ footer{
 /* mobile */
 @media only screen and (max-width: 420px) {
     main{
+        margin-left: 5%;
+        margin-right: 5%;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "history"
@@ -285,6 +291,6 @@ footer{
         gap: 1em;
     }
     html{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
