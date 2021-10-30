@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Quicksand:wght@300;400&display=swap');
+
 /* ===============
     global styles
    ==============*/
@@ -51,6 +52,9 @@ h2{
     height: auto;
 }
 
+.nav-title{
+    transition: color 0.35s linear;
+}
 .nav-title:hover{
     color: gold;
 }
