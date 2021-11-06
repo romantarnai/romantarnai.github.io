@@ -116,6 +116,7 @@ main{
     grid-template-areas: 
     "history history"
     "engine rivals"
+    "decal decal"
     ;
 }
 
@@ -194,6 +195,30 @@ main{
 .text-box--button:hover .button-text{
     color: black;
 }
+
+/* decal parallax */
+.decal{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url("../images/decal.jpg");
+    grid-area: decal;
+}
+.decal-text{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #031f5fd0;
+}
+.decal-text > h2{
+    font-size: 1.8rem;
+}
+
 
 /* ===============
        footer
@@ -285,6 +310,7 @@ footer{
         "history"
         "engine"
         "rivals"
+        "decal"
         ;
     }
     .social{
